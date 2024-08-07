@@ -1,5 +1,5 @@
 const express = require('express');
-const mongoose = require('./db'); // Ensure this is the correct path
+const mongoose = require('./db');
 const pizzaRoute = require('./routes/pizzaRoute');
 const userRoute = require('./routes/userRoute');
 const ordersRoute = require("./routes/ordersRoute");

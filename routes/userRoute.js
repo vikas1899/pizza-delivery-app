@@ -3,9 +3,6 @@ const router = express.Router();
 const User = require("../models/userModel");
 const { route } = require('express/lib/application');
 
-
-
-
 router.post('/register', async (req, res) => {
     const { name, email, password } = req.body;
 
@@ -18,7 +15,6 @@ router.post('/register', async (req, res) => {
         return res.status(400).json({ message: error })
     }
 })
-
 
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;

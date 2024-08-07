@@ -9,19 +9,18 @@ router.post('/placeorder', async (req, res) => {
     const { token, subtotal, currentUser, cartItems } = req.body;
 
     try {
-        // Create a new customer
+
         const customer = await stripe.customers.create({
             email: token.email,
             source: token.id
         });
 
-        // Create a new charge with a description
         const payment = await stripe.charges.create({
             amount: subtotal * 100, // Amount in cents
             currency: 'inr',
             customer: customer.id,
             receipt_email: token.email,
-            description: 'Order placed by ' + currentUser.name // Adding a description to comply with Indian regulations
+            description: 'Order placed by ' + currentUser.name
         }, {
             idempotencyKey: uuidv4()
         });
