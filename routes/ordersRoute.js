@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const stripe = require('stripe')('sk_test_tR3PYbcVNZZ796tH88S4VQ2u'); // Replace with your actual Stripe secret key
+require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRETE_KEY); // Replace with your actual Stripe secret key
 const { v4: uuidv4 } = require('uuid');
 const Order = require('../models/orderModel')
 
