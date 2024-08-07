@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'font-awesome/css/font-awesome.min.css';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.Nav-heading {
+    color: orangered !important;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 20px !important;
+}
+
+.flex-container {
+    display: flex !important;
+}
+
+.btn {
+    background-color: red !important;
+    color: white !important;
+}
+
+select {
+    box-shadow: none !important;
+    border-color: black !important;
+}
+
+.fa-plus {
+    color: green;
+    margin: 5px;
+}
+
+.fa-minus {
+    color: red !important;
+    margin: 5px;
+}
+
+.fa-trash {
+    color: red;
+    margin: 5px;
+}
+
+input {
+    margin-top: 10px !important;
+    box-shadow: none !important;
+}
+
+.login-link:hover {
+    color: skyblue;
+}
+
+.adminfunctions {
+    width: 80vw;
+    padding: 10px;
+    background-color: rgb(1, 1, 77);
+    text-align: center;
+}
+
+.adminfunctions li {
+    list-style-type: none !important;
+    display: inline !important;
+    color: white !important;
+}
+
+.adminfunctions li a {
+    color: white !important;
+    padding: 20px;
+}
+
+td,
+th,
+tr {
+    text-align: left;
+}
+
+.login {
+    background-image: url('./images/bg1.svg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 90vh;
+}
+
+.register {
+    background-image: url('./images/bg2.svg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 90vh;
+}
